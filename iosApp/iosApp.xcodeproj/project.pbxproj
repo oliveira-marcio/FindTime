@@ -3,13 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
-		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
+		2152FB042600AC8F00CF470E /* TimezoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* TimezoneApp.swift */; };
+		36455EB029E6F846001DA74B /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EAF29E6F846001DA74B /* CardModifier.swift */; };
+		36455EB229E6F876001DA74B /* ListModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EB129E6F876001DA74B /* ListModifier.swift */; };
+		36455EB429E6F89F001DA74B /* NumberTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EB329E6F89F001DA74B /* NumberTimeCard.swift */; };
+		36455EB629E6F8BF001DA74B /* PresentationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EB529E6F8BF001DA74B /* PresentationSettings.swift */; };
+		36455EB829E6F8D7001DA74B /* Searchbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EB729E6F8D7001DA74B /* Searchbar.swift */; };
+		36455EBA29E6F8FE001DA74B /* TimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EB929E6F8FE001DA74B /* TimeCard.swift */; };
+		36455EBC29E6F915001DA74B /* TimezoneDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EBB29E6F915001DA74B /* TimezoneDialog.swift */; };
+		36455EBE29E6F931001DA74B /* TimezoneItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EBD29E6F931001DA74B /* TimezoneItems.swift */; };
+		36455EC029E6F949001DA74B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EBF29E6F949001DA74B /* Utils.swift */; };
+		36455EC429E6FC03001DA74B /* TimezoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EC329E6FC03001DA74B /* TimezoneView.swift */; };
+		36455EC629E6FE1F001DA74B /* HourSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EC529E6FE1F001DA74B /* HourSheet.swift */; };
+		36455EC829E7020A001DA74B /* FindMeeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36455EC729E7020A001DA74B /* FindMeeting.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 		7F18E158884D6B1881E8D7F1 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A304CDCC17686CC2B30D64DC /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
@@ -17,7 +29,19 @@
 /* Begin PBXFileReference section */
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		2152FB032600AC8F00CF470E /* TimezoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneApp.swift; sourceTree = "<group>"; };
+		36455EAF29E6F846001DA74B /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		36455EB129E6F876001DA74B /* ListModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModifier.swift; sourceTree = "<group>"; };
+		36455EB329E6F89F001DA74B /* NumberTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTimeCard.swift; sourceTree = "<group>"; };
+		36455EB529E6F8BF001DA74B /* PresentationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationSettings.swift; sourceTree = "<group>"; };
+		36455EB729E6F8D7001DA74B /* Searchbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searchbar.swift; sourceTree = "<group>"; };
+		36455EB929E6F8FE001DA74B /* TimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCard.swift; sourceTree = "<group>"; };
+		36455EBB29E6F915001DA74B /* TimezoneDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneDialog.swift; sourceTree = "<group>"; };
+		36455EBD29E6F931001DA74B /* TimezoneItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneItems.swift; sourceTree = "<group>"; };
+		36455EBF29E6F949001DA74B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		36455EC329E6FC03001DA74B /* TimezoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimezoneView.swift; sourceTree = "<group>"; };
+		36455EC529E6FE1F001DA74B /* HourSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourSheet.swift; sourceTree = "<group>"; };
+		36455EC729E7020A001DA74B /* FindMeeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMeeting.swift; sourceTree = "<group>"; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +76,6 @@
 				C5A081611D204AE40206977B /* Pods-iosApp.debug.xcconfig */,
 				83DFC3B731EE87F73DF36922 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -86,10 +109,22 @@
 			isa = PBXGroup;
 			children = (
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
+				36455EAF29E6F846001DA74B /* CardModifier.swift */,
 				7555FF82242A565900829871 /* ContentView.swift */,
+				36455EC529E6FE1F001DA74B /* HourSheet.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
-				2152FB032600AC8F00CF470E /* iOSApp.swift */,
+				36455EB129E6F876001DA74B /* ListModifier.swift */,
+				36455EB329E6F89F001DA74B /* NumberTimeCard.swift */,
+				36455EB529E6F8BF001DA74B /* PresentationSettings.swift */,
+				36455EB729E6F8D7001DA74B /* Searchbar.swift */,
+				36455EB929E6F8FE001DA74B /* TimeCard.swift */,
+				2152FB032600AC8F00CF470E /* TimezoneApp.swift */,
+				36455EBB29E6F915001DA74B /* TimezoneDialog.swift */,
+				36455EBD29E6F931001DA74B /* TimezoneItems.swift */,
+				36455EC329E6FC03001DA74B /* TimezoneView.swift */,
+				36455EBF29E6F949001DA74B /* Utils.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				36455EC729E7020A001DA74B /* FindMeeting.swift */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -208,8 +243,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				36455EB229E6F876001DA74B /* ListModifier.swift in Sources */,
+				36455EBE29E6F931001DA74B /* TimezoneItems.swift in Sources */,
+				2152FB042600AC8F00CF470E /* TimezoneApp.swift in Sources */,
+				36455EBA29E6F8FE001DA74B /* TimeCard.swift in Sources */,
+				36455EB629E6F8BF001DA74B /* PresentationSettings.swift in Sources */,
+				36455EBC29E6F915001DA74B /* TimezoneDialog.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				36455EC429E6FC03001DA74B /* TimezoneView.swift in Sources */,
+				36455EC629E6FE1F001DA74B /* HourSheet.swift in Sources */,
+				36455EC029E6F949001DA74B /* Utils.swift in Sources */,
+				36455EB829E6F8D7001DA74B /* Searchbar.swift in Sources */,
+				36455EB429E6F89F001DA74B /* NumberTimeCard.swift in Sources */,
+				36455EC829E7020A001DA74B /* FindMeeting.swift in Sources */,
+				36455EB029E6F846001DA74B /* CardModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
