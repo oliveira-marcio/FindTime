@@ -3,38 +3,41 @@ package com.raywenderlich.findtime.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.raywenderlich.findtime.TimeZoneHelperImpl
+import androidx.compose.material.TopAppBar
+import androidx.compose.ui.res.stringResource
+import com.raywenderlich.findtime.android.ui.MainView
+import io.github.aakira.napier.DebugAntilog
+import io.github.aakira.napier.Napier
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Napier.base(DebugAntilog())
         setContent {
-            MyApplicationTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    GreetingView(TimeZoneHelperImpl().currentTime())
-                }
+            MainView {
+                TopAppBar(title = {
+                    when (it) {
+                        0 -> Text(text = stringResource(R.string.world_clocks))
+                        else -> Text(text = stringResource(R.string.findmeeting))
+                    }
+                })
             }
         }
     }
 }
 
-@Composable
-fun GreetingView(text: String) {
-    Text(text = text)
-}
-
 @Preview
 @Composable
 fun DefaultPreview() {
-    MyApplicationTheme {
-        GreetingView("Hello, Android!")
+    MainView {
+        TopAppBar(title = {
+            when (it) {
+                0 -> Text(text = "World Clocks")
+                else -> Text(text = "Find Meeting")
+            }
+        })
     }
 }
